@@ -1,1 +1,14 @@
-Test
+<?php 
+// Path Configuring   //////////////////////////////////////
+$config = parse_ini_file('config.ini', true);
+$environment = $config['ENVIRONMENT'];
+$URL_BASE = $config[$environment]['URL_BASE'];
+$APP_ROOT = $config[$environment]['APP_ROOT'];
+define("APP_ROOT", dirname(__FILE__));
+define("URL_BASE", $config[$environment]["URL_BASE"]);
+////////////////////////////////////////////////////////////
+
+include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
+
+?>
+<body>Hello World</body></html>
