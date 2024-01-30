@@ -4,12 +4,12 @@ $config = parse_ini_file('config.ini', true);
 $environment = $config['ENVIRONMENT'];
 $URL_BASE = $config[$environment]['URL_BASE'];
 $APP_ROOT = $config[$environment]['APP_ROOT'];
-define("APP_ROOT", dirname(__FILE__));
-define("URL_BASE", $config[$environment]["URL_BASE"]);
+define('APP_ROOT', dirname(__FILE__));
+define('URL_BASE', $config[$environment]["URL_BASE"]);
 ////////////////////////////////////////////////////////////
 
-include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
-
+include_once($APP_ROOT . "/src/BoilerPlate/head.view.php");
+include_once($APP_ROOT . "/src/data.php");
 ?>
 <body>
 
@@ -20,8 +20,9 @@ include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
             <div class="form-header">
                 <h1>Account Login</h1>
             </div>
-
+            
             <div class="form-content">
+            
                 <form method="post">
 
                     <div class="form-group">
@@ -35,15 +36,12 @@ include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
                     </div>
 
                     <div class="form-group">
-                        <button type="submit">Log In</button>
+                        <a href="src/data.php"><button type="submit">Log In</button></a>
                     </div>
-
                 </form>
             </div>
     </div>
 </div>
-<!-- Login form  -->
-
 </body>
 
 </html>

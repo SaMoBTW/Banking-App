@@ -1,5 +1,5 @@
 <?php
-$name = "";
+$user = "";
 $data = 
 [
     'check1'=> 
@@ -29,40 +29,29 @@ $data =
         }
     }
     function displayAccounts($data){
+        $total = 0;
         foreach ($data as $check) {
             echo "
             <div>
-                <h3>{$check['name']}</h3>
-                <p>{$check['number']}</p>
-                <p>{$check['amount']}</p>
+                <p class = 'checkingDiv'>{$check['name']}</p>
+                <p class = 'checkingDiv'>{$check['number']}</p>
+                <p class = 'checkingDiv'>{$check['amount']}</p>
             </div>
             ";
+            $total += $check['amount'];
         }
+        echo "<h3 class = 'total'> Total  = {$total} </h3>";
     }
 
-    function getUser()
+    function setUser()
     {
-        return $_POST['name'];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $_SESSION['$user'] = $_POST['username'];
+            header("Location: elias.php");
+            exit();
+        }
     };
-    
-
+    function getUser(){
+        echo $_SESSION['$user'];
+    }
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance Check Form</title>
-</head>
-<body>
-
-    <?php
-    getUser();
-    echo $name;
-    ?>
-
-</body>
-</html>
-
