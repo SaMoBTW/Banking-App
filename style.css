@@ -222,3 +222,9 @@ body {
     padding: 60px calc(5% + 60px) 60px 60px;
     box-sizing: border-box;
 }
+
+
+/* checking account divs */
+.checkingDiv {
+    background-color: green;
+}
