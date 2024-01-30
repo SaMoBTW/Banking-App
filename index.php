@@ -13,13 +13,37 @@ include_once(APP_ROOT . "/src/BoilerPlate/header.view.php");
 
 ?>
 
+<!-- Login form  -->
+<div class="form">
+    <div class="form-toggle">
+        <div class="form-panel one">
+            <div class="form-header">
+                <h1>Account Login</h1>
+            </div>
 
-<br><br><br><br><br><br><br><br>
-    <footer>
-        <center>
-            <h6><a href="https://google.com"><i> GitHub Repository Code <i></a> <h6>
-        </center>
-    </footer>
+            <div class="form-content">
+                <form method="post">
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required="required" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required="required" />
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Log In</button>
+                    </div>
+
+                </form>
+            </div>
+    </div>
 </div>
+<!-- Login form  -->
+
 </body>
+
 </html>
