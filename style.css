@@ -1,0 +1,266 @@
+#wrapper {
+    width: 100%;
+    background-color: #2b3035;
+
+}
+
+
+/*---------------Header Below---------------*/
+#banner {
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+
+}
+
+header {
+    background-color: #d8e1e6;
+    color: #3a2d97;
+    border-radius: 1em 1em 1em 1em;
+    border: 5px solid #0d6efd;
+    box-shadow: .3em .6em .2em #618685;
+    min-width: 300px;
+    overflow: hidden;
+    z-index: 1;
+    height: 110px;
+}
+
+/*-----------------Header----------------------*/
+#banner-container {
+    position: relative;
+    overflow: hidden;
+    width: 99%;
+    background-color: #0d6efd;
+}
+
+#overlay-div {
+    background-color: #0d6efd;
+    color: #fefbd8;
+    min-width: 300px;
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-heading {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 2em;
+    height: 2em;
+    padding-top: 25px;
+    min-width: 300px;
+    display: inline-block;
+}
+
+#profileImage {
+    float: right;
+    margin-right: 50px;
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 30%;
+    border-style: outset;
+    background-color: white;
+}
+
+#aboutMeImg {
+    float: inline-block;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    margin-top: 7px;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 30%;
+    border-style: outset;
+    background-color: white;
+}
+
+
+/*/////////////////////////////////////////////////*/
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #2b3035;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.overlay,
+.form-panel.one:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    z-index: 15;
+    position: relative;
+    background: white;
+    width: 600px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 100px auto 10px;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.form-group:last-child {
+    margin: 0;
+}
+
+.form-group label {
+    display: block;
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.two .form-group label {
+    color: #FFFFFF;
+}
+
+.form-group input {
+    outline: none;
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.two .form-group input {
+    color: #FFFFFF;
+}
+
+.two .form-group input:focus {
+    color: #FFFFFF;
+}
+
+.form-group button {
+    outline: none;
+    background: #0d6efd;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.two .form-group button {
+    background: #FFFFFF;
+    color: #0d6efd;
+}
+
+.form-group .form-remember {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.form-group .form-remember input[type=checkbox] {
+    display: inline-block;
+    width: auto;
+    margin: 0 10px 0 0;
+}
+
+.form-group .form-recovery {
+    color: #0d6efd;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.form-panel {
+    padding: 60px calc(5% + 60px) 60px 60px;
+    box-sizing: border-box;
+}
+
+
+/* checking account divs */
+.checkingDiv {
+    background-color: green;
+    display: inline;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.accounts-wrapper {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.total {
+    background-color: #0d6efd;
+    padding: 10px;
+    display: inline;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}
+
+.checking-heading {
+    display: inline;
+    margin-right: 15px;
+}
+
+.checking-acc-num {
+    display: inline;
+}
+
+.acc-wrapper {
+    margin-bottom: 15px;
+    border: solid 3px #2b3035;
+    padding: 9px;
+    border-radius: 15px;
+}
