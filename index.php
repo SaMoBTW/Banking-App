@@ -9,7 +9,6 @@ define("URL_BASE", $config[$environment]["URL_BASE"]);
 ////////////////////////////////////////////////////////////
 
 include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
-include_once(APP_ROOT . "/src/BoilerPlate/header.view.php");
 
 ?>
 
