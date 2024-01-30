@@ -16,18 +16,20 @@ include_once(APP_ROOT . "/BoilerPlate/header.view.php");
 <form method="post">
 From: 
   <select name="from" id="from">
-    <option value="checking1">checking1</option>
-    <option value="checking2">checking2</option>
-    <option value="checking3">checking3</option>
+    <option value="checking1" name = "Checking 1">Checking1</option>
+    <option value="checking2" name = "Checking 2">Checking2</option>
+    <option value="checking3" name = "Checking 3">Checking3</option>
   </select><br>
 To: 
   <select name="from" id="from">
-    <option value="checking1">checking1</option>
-    <option value="checking2">checking2</option>
-    <option value="checking3">checking3</option>
+    <option value="checking1" name = "Checking 1">Checking1</option>
+    <option value="checking2" name = "Checking 2">Checking2</option>
+    <option value="checking3" name = "Checking 3">Checking3</option>
+
   </select><br>
 Amount: 
-  <input type="text" name="amount" readonly>
+  <input type="text" name="amount" >
   <br><br>
   <input type="submit">
+  
 </form>
