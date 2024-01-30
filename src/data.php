@@ -47,7 +47,7 @@ $data =
     {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['$user'] = $_POST['username'];
-            header("Location: elias.php");
+            header("Location: src/Account.php");
             exit();
         }
     };
