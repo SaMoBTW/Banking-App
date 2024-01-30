@@ -7,7 +7,7 @@ $user = $_SESSION['$user'];
     <div id="wrapper">
     <header id="banner-container">
         <div id="overlay-div">
-            <img id="profileImage" src="src/media/bankIcon.jpg">
+            <img id="profileImage" src="./media/bankIcon.jpg">
             <h1 class ="header-heading">&nbsp;&nbsp;&nbsp;&nbsp; <?php echo "Welcome " . $user ?></h1>
         </div>
 
