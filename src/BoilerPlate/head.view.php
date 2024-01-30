@@ -11,3 +11,4 @@ $pageName = "Log-In"
     <title><?php echo $pageName . " | " . $name ?> </title>
     <link rel="stylesheet" type="text/css" href="<?php echo "style.css"?>"/>
 </head>
+<body>
