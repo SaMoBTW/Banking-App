@@ -8,10 +8,10 @@ define('APP_ROOT', dirname(__FILE__));
 define('URL_BASE', $config[$environment]["URL_BASE"]);
 ////////////////////////////////////////////////////////////
 
-include_once($APP_ROOT . "/src/BoilerPlate/head.view.php");
-include_once($APP_ROOT . "/src/data.php");
+include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
+include_once(APP_ROOT . "/src/BoilerPlate/header.view.php");
+
 ?>
-<body>
 
 <!-- Login form  -->
 <div class="form">
@@ -42,6 +42,8 @@ include_once($APP_ROOT . "/src/data.php");
             </div>
     </div>
 </div>
+<!-- Login form  -->
+
 </body>
 
 </html>
