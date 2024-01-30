@@ -2,7 +2,7 @@
 ?>
 
 <body>
-
+    <div id="wrapper">
     <header id="banner-container">
         <div id="overlay-div">
             <img id="profileImage" src="src/media/bankIcon.jpg">
@@ -13,4 +13,4 @@
 
     </header>
 
-    <br><br><br><br>
+    <br>
