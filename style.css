@@ -1,43 +1,43 @@
-
-
 #wrapper {
     width: 100%;
-    background-color: #bdbdbd;
+    background-color: #2b3035;
+
 }
 
 
 /*---------------Header Below---------------*/
 #banner {
-    width:100%;
+    width: 100%;
     z-index: -1;
-    margin:0;
-    
+    margin: 0;
 
 }
+
 header {
     background-color: #d8e1e6;
     color: #3a2d97;
     border-radius: 1em 1em 1em 1em;
-    border: 5px solid #4040a1;
+    border: 5px solid #0d6efd;
     box-shadow: .3em .6em .2em #618685;
     min-width: 300px;
     overflow: hidden;
     z-index: 1;
-    height:110px;
+    height: 110px;
 }
+
 /*-----------------Header----------------------*/
 #banner-container {
     position: relative;
     overflow: hidden;
-    width:99%;
-    background-color: #3a2d97;
+    width: 99%;
+    background-color: #0d6efd;
 }
 
 #overlay-div {
-    background-color: #3a2d97;
+    background-color: #0d6efd;
     color: #fefbd8;
     min-width: 300px;
-    width:80%;
+    width: 80%;
     margin-left: 10%;
     position: absolute;
     padding: 20px;
@@ -46,33 +46,36 @@ header {
     transform: translateY(-50%);
 }
 
-h1 {
-    font-family: 'Times New Roman', Times, serif;
+.header-heading {
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 2em;
     height: 2em;
-    padding-top: 25px;
+    padding-top: 35px;
     min-width: 300px;
-    display:inline-block;
+    display: inline-block;
+
 }
+
 #profileImage {
-    float: right; 
-    margin-right:50px;
-    width: 80px; 
-    height: 80px; 
-    margin-top:15px;
+    float: right;
+    margin-right: 50px;
+    width: 80px;
+    height: 80px;
+    margin-top: 15px;
     padding: 5px;
     border: 5px solid black;
     border-radius: 30%;
     border-style: outset;
     background-color: white;
 }
+
 #aboutMeImg {
-    float: inline-block; 
-    margin-right:50px;
-    width: 200px; 
-    height: 200px; 
-    margin-top:7px;
+    float: inline-block;
+    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    margin-top: 7px;
     padding: 5px;
     border: 5px solid black;
     border-radius: 30%;
@@ -118,6 +121,7 @@ body {
     box-sizing: border-box;
     margin: 100px auto 10px;
     overflow: hidden;
+    margin-top: 150px;
 }
 
 .form-group {
@@ -193,7 +197,7 @@ body {
 
 .two .form-group button {
     background: #FFFFFF;
-    color: #4285F4;
+    color: #0d6efd;
 }
 
 .form-group .form-remember {
@@ -210,7 +214,7 @@ body {
 }
 
 .form-group .form-recovery {
-    color: #4285F4;
+    color: #0d6efd;
     font-size: 12px;
     text-decoration: none;
 }
@@ -218,4 +222,71 @@ body {
 .form-panel {
     padding: 60px calc(5% + 60px) 60px 60px;
     box-sizing: border-box;
+}
+
+
+/* checking account divs */
+.checkingDiv {
+    background-color: green;
+    display: inline;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.accounts-wrapper {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.total {
+    background-color: #0d6efd;
+    padding: 10px;
+    display: inline;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}
+
+.checking-heading {
+    color: #0d6efd;
+    display: inline;
+    margin-right: 15px;
+}
+
+.checking-acc-num {
+    display: inline;
+}
+
+.acc-wrapper {
+    margin-bottom: 15px;
+    border: solid 3px #2b3035;
+    padding: 9px;
+    border-radius: 15px;
+}
+
+.transaction-form>h2 {
+    display: inline-block;
+    font-weight: bold;
+    width: 90px;
+}
+
+.transaction-form-button {
+    background-color: #0d6efd;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.transaction-form {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+select {
+    padding: 5px;
 }
