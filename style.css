@@ -290,3 +290,22 @@ body {
 select {
     padding: 5px;
 }
+
+.sufffunds {
+    color: green;
+}
+
+.insufffunds {
+    color: red;
+}
+
+/*-----------------Task----------------------
+make 2 classes
+.insufffunds
+have the color be red
+and 
+.sufffunds
+have the color be green
+*/ 
+
+/* ^ DONE ^ */
