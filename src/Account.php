@@ -12,9 +12,12 @@ include_once(APP_ROOT. "/data.php");
 include_once(APP_ROOT . "/BoilerPlate/head.view.php");
 include_once(APP_ROOT . "/BoilerPlate/header.view.php");
 
-displayAccounts($data);
-
 ?>
 
+<div class="accounts-wrapper">
+
+<?php displayAccounts($data); ?>
+
+</div>
 
 

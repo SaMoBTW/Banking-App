@@ -32,15 +32,16 @@ $data =
         $total = 0;
         foreach ($data as $check) {
             echo "
-            <div>
-                <p class = 'checkingDiv'>{$check['name']}</p>
-                <p class = 'checkingDiv'>{$check['number']}</p>
-                <p class = 'checkingDiv'>{$check['amount']}</p>
+            <div class = 'acc-wrapper'>
+                <h3 class = 'checking-heading'>{$check['name']}</h3>
+                <p class = 'checking-acc-num'>{$check['number']}</p>
+      
+                <h2 class = 'checking-balance'>Available balance: $ {$check['amount']}</h2>
             </div>
             ";
             $total += $check['amount'];
         }
-        echo "<h3 class = 'total'> Total  = {$total} </h3>";
+        echo "<h2 class = 'total'> Total: $ {$total} </h2>";
     }
 
     function setUser()

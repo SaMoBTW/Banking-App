@@ -180,7 +180,7 @@ body {
 
 .form-group button {
     outline: none;
-    background: #4285F4;
+    background: #0d6efd;
     width: 100%;
     border: 0;
     border-radius: 4px;
@@ -196,7 +196,7 @@ body {
 
 .two .form-group button {
     background: #FFFFFF;
-    color: #4285F4;
+    color: #0d6efd;
 }
 
 .form-group .form-remember {
@@ -213,7 +213,7 @@ body {
 }
 
 .form-group .form-recovery {
-    color: #4285F4;
+    color: #0d6efd;
     font-size: 12px;
     text-decoration: none;
 }
@@ -227,4 +227,40 @@ body {
 /* checking account divs */
 .checkingDiv {
     background-color: green;
+    display: inline;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.accounts-wrapper {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.total {
+    background-color: #0d6efd;
+    padding: 10px;
+    display: inline;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}
+
+.checking-heading {
+    display: inline;
+    margin-right: 15px;
+}
+
+.checking-acc-num {
+    display: inline;
+}
+
+.acc-wrapper {
+    margin-bottom: 15px;
+    border: solid 3px #2b3035;
+    padding: 9px;
+    border-radius: 15px;
 }

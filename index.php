@@ -11,7 +11,6 @@ define('URL_BASE', $config[$environment]["URL_BASE"]);
 include_once(APP_ROOT. "/src/data.php");
 include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
 
-
 ?>
 
 <!-- Login form  -->
