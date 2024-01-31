@@ -47,13 +47,14 @@ header {
 }
 
 .header-heading {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 2em;
     height: 2em;
-    padding-top: 25px;
+    padding-top: 35px;
     min-width: 300px;
     display: inline-block;
+
 }
 
 #profileImage {
@@ -250,6 +251,7 @@ body {
 }
 
 .checking-heading {
+    color: #0d6efd;
     display: inline;
     margin-right: 15px;
 }
@@ -264,3 +266,36 @@ body {
     padding: 9px;
     border-radius: 15px;
 }
+
+.transaction-form>h2 {
+    display: inline-block;
+    font-weight: bold;
+    width: 90px;
+}
+
+.transaction-form-button {
+    background-color: #0d6efd;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.transaction-form {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+select {
+    padding: 5px;
+}
+
+/*-----------------Task----------------------
+make 2 classes
+.insufffunds
+have the color be red
+and 
+.sufffunds
+have the color be green
+*/

@@ -56,26 +56,7 @@ $data =
         echo $_SESSION['$user'];
     }
     
-    function updateCheckingDetails($data) {
-        // Ensure session is started
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-    
-        foreach ($data as $key => $check) {
-            $sessionKey = $check['name'] . 'amount';
-    
-            if (isset($_SESSION[$sessionKey])) {
-                // Update array with session data
-                $data[$key]['amount'] = $_SESSION[$sessionKey];
-            } else {
-                // Initialize session data with array value
-                $_SESSION[$sessionKey] = $check['amount'];
-            }
-        }
-    
-        return $data; // Return the updated array
-    }
+
     
     function goToAccount()
     {

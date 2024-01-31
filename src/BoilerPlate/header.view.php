@@ -2,6 +2,7 @@
 session_start();
 // Path Configuring   //////////////////////////////////////
 $user = $_SESSION['$user'];
+
 ?>
 <body>
     <div id="wrapper">
