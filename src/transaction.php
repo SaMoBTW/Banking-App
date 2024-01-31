@@ -11,26 +11,8 @@ define('URL_BASE', $config[$environment]["URL_BASE"]);
 include_once(APP_ROOT. "/data.php");
 include_once(APP_ROOT . "/BoilerPlate/head.view.php");
 include_once(APP_ROOT . "/BoilerPlate/header.view.php");
-function updateCheckingDetails($data) {
-    // Ensure session is started
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
 
-    foreach ($data as $key => $check) {
-        $sessionKey = $check['name'] . 'amount';
 
-        if (isset($_SESSION[$sessionKey])) {
-            // Update array with session data
-            $data[$key]['amount'] = $_SESSION[$sessionKey];
-        } else {
-            // Initialize session data with array value
-            $_SESSION[$sessionKey] = $check['amount'];
-        }
-    }
-
-    return $data; // Return the updated array
-}
 foreach ($data as $check) {
     if (isset($_POST[$check['name']]))
     {
@@ -64,13 +46,21 @@ Amount:
   <input type="submit">
 
 </form>
+
 <?php
-//task added. Check if $_POST['amount'] is less than $_POST[$_POST['form']] throw in the code down there then do an else
+
+if ($_POST['amount'] <= $_POST[$_POST['from']]){
+    $_POST[$_POST['from']] -= $_POST['amount'];
+    $_POST[$_POST['To']] += $_POST['amount'];
+    echo "<p class = \"sufffunds\">Sufficient funds!</p>";
+} else {
+    echo "<p class = \"insufffunds\">Insufficient funds!</p>";
+}
+
+//task added. Check if $_POST['amount'] is less than $_POST[$_POST['from']] throw in the code down there then do an else
 // echo "INSUFFICIENT FUNDS" do not use chat gpt it will mess with the entire page. 
 //remember these are basically just numbers $_POST[$_POST['from']] , $_POST['amount'].
 // have the suffienct funds and insufficient funds be in paragraph tags that have a class of sufffunds, and insufffunds.
 
-$_POST[$_POST['from']] -= $_POST['amount'];
-$_POST[$_POST['To']] += $_POST['amount'];
 
 ?>
