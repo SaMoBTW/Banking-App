@@ -12,32 +12,45 @@ include_once(APP_ROOT. "/data.php");
 include_once(APP_ROOT . "/BoilerPlate/head.view.php");
 include_once(APP_ROOT . "/BoilerPlate/header.view.php");
 
-foreach ($data as $check) {
-    if (isset($_POST[$check['name']]))
-    {
+
+$from = $_POST['from'];
+echo $from;
+
+if (isset($_POST[$from])) {
+    echo $_POST[$from];
+} else {
+    echo "Key '$from' is not set in the POST array.";
+}
+
+// Initialize $_POST['Checking 1'] if not set
+if (!isset($_POST['Checking 1'])) {
+    $_POST['Checking 1'] = 0;
+}
+
+foreach ($data as $key => $check) {
+    if (isset($_POST[$check['name']])) {
         continue;
-    }
-    else 
-    {
+    } else {
         $_POST[$check['name']] = $check['amount'];
     }
-    print_r($_POST);
 }
+
+print_r($_POST);
 
 ?>
 
 <form method="post" action="">
 From: 
   <select name="from" id="from">
-    <option value="Checking 1" name = "Checking 1">Checking1</option>
-    <option value="Checking 2" name = "Checking 2">Checking2</option>
-    <option value="Checking 3" name = "Checking 3">Checking3</option>
+    <option value='Checking 1' name = "Checking 1">Checking1</option>
+    <option value='Checking 2' name = "Checking 2">Checking2</option>
+    <option value='Checking 3' name = "Checking 3">Checking3</option>
   </select><br>
 To: 
   <select name="To" id="from">
-    <option value="Checking 1" name = "Checking 1">Checking1</option>
-    <option value="Checking 2" name = "Checking 2">Checking2</option>
-    <option value="Checking 3" name = "Checking 3">Checking3</option>
+    <option value='Checking 1' name = "Checking 1">Checking1</option>
+    <option value='Checking 2' name = "Checking 2">Checking2</option>
+    <option value='Checking 3' name = "Checking 3">Checking3</option>
 
   </select><br>
 Amount: 
