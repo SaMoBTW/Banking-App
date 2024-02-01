@@ -46,16 +46,7 @@ header {
     transform: translateY(-50%);
 }
 
-.header-heading {
-    font-family: "Roboto", sans-serif;
-    color: white;
-    font-size: 2em;
-    height: 2em;
-    padding-top: 35px;
-    min-width: 300px;
-    display: inline-block;
 
-}
 
 #profileImage {
     float: right;
@@ -302,6 +293,29 @@ select {
 
 .insufffunds {
     color: red;
+}
+
+.nav-bar-listitems {
+    display: inline;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-bar-listitems>a {
+    text-decoration: none;
+}
+
+.header-heading {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    /* height: 2em; */
+    min-width: 300px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
 }
 
 /*-----------------Task----------------------
