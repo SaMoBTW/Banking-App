@@ -32,26 +32,27 @@ foreach ($data as $check) {
 print_r($_POST);
 
 ?>
+<form class="transaction-form" method="post">
 
-<form method="post" action = "">
-From: 
+  <h2>
+    From:
+  </h2> 
   <select name="from" id="from">
-    <option value='Checking 1' name = "Checking 1">Checking1</option>
-    <option value='Checking 2' name = "Checking 2">Checking2</option>
-    <option value='Checking 3' name = "Checking 3">Checking3</option>
+    <option value="Checking 1" name = "Checking 1">Checking1</option>
+    <option value="Checking 2" name = "Checking 2">Checking2</option>
+    <option value="Checking 3" name = "Checking 3">Checking3</option>
   </select><br>
 To: 
   <select name="To" id="from">
-    <option value='Checking 1' name = "Checking 1">Checking1</option>
-    <option value='Checking 2' name = "Checking 2">Checking2</option>
-    <option value='Checking 3' name = "Checking 3">Checking3</option>
+    <option value="Checking 1" name = "Checking 1">Checking1</option>
+    <option value="Checking 2" name = "Checking 2">Checking2</option>
+    <option value="Checking 3" name = "Checking 3">Checking3</option>
 
   </select><br>
 Amount: 
   <input type="text" name="amount" >
   <br><br>
   <input type="submit">
-
 
 </form>
 
