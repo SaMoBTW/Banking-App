@@ -11,24 +11,18 @@ define('URL_BASE', $config[$environment]["URL_BASE"]);
 include_once(APP_ROOT. "/data.php");
 include_once(APP_ROOT . "/BoilerPlate/head.view.php");
 include_once(APP_ROOT . "/BoilerPlate/header.view.php");
-
-
-$from = $_POST['from'];
-echo $from;
-
-if (isset($_POST[$from])) {
-    echo $_POST[$from];
-} else {
-    echo "Key '$from' is not set in the POST array.";
+if(isset($_POST[$_POST['from']]))
+{
+    echo "YES";
+}
+else 
+{
+    echo "NO";
 }
 
-// Initialize $_POST['Checking 1'] if not set
-if (!isset($_POST['Checking 1'])) {
-    $_POST['Checking 1'] = 0;
-}
-
-foreach ($data as $key => $check) {
-    if (isset($_POST[$check['name']])) {
+foreach ($data as $check) {
+    if (isset($_POST[$check['name']]))
+    {
         continue;
     } else {
         $_POST[$check['name']] = $check['amount'];
@@ -39,7 +33,7 @@ print_r($_POST);
 
 ?>
 
-<form method="post" action="">
+<form method="post" action = "">
 From: 
   <select name="from" id="from">
     <option value='Checking 1' name = "Checking 1">Checking1</option>
@@ -58,14 +52,26 @@ Amount:
   <br><br>
   <input type="submit">
 
+
 </form>
+
 <?php
-//task added. Check if $_POST['amount'] is less than $_POST[$_POST['form']] throw in the code down there then do an else
+echo $_POST['from'];
+echo $_POST[$_POST['from']];
+
+if ($_POST['amount'] <= $_POST[$_POST['from']]){
+    $_POST[$_POST['from']] -= $_POST['amount'];
+    $_POST[$_POST['To']] += $_POST['amount'];
+    echo "<p class = \"sufffunds\">Sufficient funds!</p>";
+} else {
+    echo "<p class = \"insufffunds\">Insufficient funds!</p>";
+}
+echo $_POST[$_POST['from']];
+
+//task added. Check if $_POST['amount'] is less than $_POST[$_POST['from']] throw in the code down there then do an else
 // echo "INSUFFICIENT FUNDS" do not use chat gpt it will mess with the entire page. 
 //remember these are basically just numbers $_POST[$_POST['from']] , $_POST['amount'].
 // have the suffienct funds and insufficient funds be in paragraph tags that have a class of sufffunds, and insufffunds.
 
-$_POST[$_POST['from']] -= $_POST['amount'];
-$_POST[$_POST['To']] += $_POST['amount'];
 
 ?>
