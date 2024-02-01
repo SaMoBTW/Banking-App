@@ -56,26 +56,8 @@ $data =
         echo $_SESSION['$user'];
     }
     
-    function updateCheckingDetails($data){
-        foreach($data as $key => $check) {
-            $sessionKey = $check['name'] . 'amount';
+
     
-            if(isset($_SESSION[$sessionKey])) {
-                $data[$key]['amount'] = $_SESSION[$sessionKey];
-            } else {
-                $_SESSION[$sessionKey] = $check['amount'];
-            }
-        }
-    
-        return $data; // Return the updated array
-    }
-    function checkFunds($fundsDifference){
-        if ($fundsDifference > 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
     function goToAccount()
     {
         header("Location: src/Account.php");
@@ -85,7 +67,7 @@ $data =
         header("Location: src/Transfers.php");
         exit();
     }
+
     
-    
-    
+
 ?>
