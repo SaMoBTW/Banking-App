@@ -20,9 +20,9 @@ include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
             <div class="form-header">
                 <h1>Account Login</h1>
             </div>
-            
+
             <div class="form-content">
-            
+
                 <form method="post">
 
                     <div class="form-group">
@@ -36,7 +36,7 @@ include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
                     </div>
 
                     <div class="form-group">
-                        <a href="src/data.php"><button type="submit">Log In</button></a>
+                        <a href="src/Account.php"><button type="submit">Log In</button></a>
                     </div>
                 </form>
                 <?php 

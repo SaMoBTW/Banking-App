@@ -35,23 +35,27 @@ $data =
 
 $message = "";
 
-if(isset($_POST)) {
+
+if(isset($_POST['amount']))
+{
+  if(isset($_POST)) {
      $b1 = $data[$_POST['from']];
      $b2 = $data[$_POST['To']];
      $amount = $_POST['amount'];
      
      
      if($b1['amount'] -$amount <0) {
-      $message = 'Insuffient funds';
+      $message = '<p class = "insufffunds">Insuffient funds </p>';
      }
      else
      {
       $data[$_POST['from']]['amount'] -= $amount;
       $data[$_POST['To']]['amount'] += $amount;
-      $message = 'suffient';
+      $message = '<p class = "sufffunds">Suffient funds </p>';
      }
 }
 
+}
 
 ?>
 <form class="transaction-form" method="post" action = "">
@@ -80,15 +84,3 @@ Amount:
 
 </form>
 <?php echo "<p>" . $message . "</p>";?>
-<pre>
- <?php print_r($data); ?>
-</pre>
-<?php
-echo $_POST['from'];
-//task added. Check if $_POST['amount'] is less than $_POST[$_POST['from']] throw in the code down there then do an else
-// echo "INSUFFICIENT FUNDS" do not use chat gpt it will mess with the entire page. 
-//remember these are basically just numbers $_POST[$_POST['from']] , $_POST['amount'].
-// have the suffienct funds and insufficient funds be in paragraph tags that have a class of sufffunds, and insufffunds.
-
-
-?>
