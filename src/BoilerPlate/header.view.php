@@ -1,6 +1,7 @@
 <?php
 session_start();
 // Path Configuring   //////////////////////////////////////
+var_dump($_SESSION['$user']);
 $user = $_SESSION['$user'];
 
 ?>

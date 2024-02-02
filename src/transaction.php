@@ -34,8 +34,9 @@ $data =
 ];
 
 $message = "";
-
-if(isset($_POST)) {
+if($_POST['amount'] != null)
+{
+  if(isset($_POST)) {
      $b1 = $data[$_POST['from']];
      $b2 = $data[$_POST['To']];
      $amount = $_POST['amount'];
@@ -51,7 +52,7 @@ if(isset($_POST)) {
       $message = 'suffient';
      }
 }
-
+}
 
 ?>
 <form class="transaction-form" method="post" action = "">
