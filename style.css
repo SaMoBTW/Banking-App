@@ -323,9 +323,9 @@ select {
 }
 
 footer {
+    padding: 10px;
     display: flex;
     justify-content: center;
-
 }
 
 .footer-repos {
@@ -334,9 +334,11 @@ footer {
     background-color: #0d6efd;
     border-radius: 5px;
     text-decoration: none;
-    position: fixed;
     bottom: 0;
     margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-content: space-evenly;
 }
 
 
