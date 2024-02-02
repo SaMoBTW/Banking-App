@@ -84,3 +84,4 @@ Amount:
 
 </form>
 <?php echo "<p>" . $message . "</p>";?>
+<?php include_once('boilerplate/footer.view.php')?>

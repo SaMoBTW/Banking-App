@@ -323,32 +323,20 @@ select {
 }
 
 footer {
-    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 99.3%;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
+    padding-bottom: 5px;
 }
 
-.footer-repos {
+.footer-repo {
     color: white;
-    padding: 5px;
     background-color: #0d6efd;
-    border-radius: 5px;
+    border-radius: 7.5px;
     text-decoration: none;
-    bottom: 0;
-    margin-bottom: 30px;
-    margin-right: 10px;
-    margin-left: 10px;
-    align-content: space-evenly;
+    padding: 5px;
+
 }
-
-
-/*-----------------Task----------------------
-make 2 classes
-.insufffunds
-have the color be red
-and 
-.sufffunds
-have the color be green
-*/
-
-/* ^ DONE ^ */
