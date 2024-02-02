@@ -64,23 +64,27 @@ if(isset($_POST['amount']))
     From:
   </h2> 
   <select name="from" id="from">
-    <option value="check1" name = "Checking 1">Checking1 <?php echo $data['check1']['amount']?></option>
-    <option value="check2" name = "Checking 2">Checking2 <?php echo $data['check2']['amount']?></option>
-    <option value="check3" name = "Checking 3">Checking3 <?php echo $data['check3']['amount']?></option>
+    <option value="check1" name = "Checking 1"><span class="checking-spans">Checking 1</span> $<?php echo $data['check1']['amount']?></option>
+    <option value="check2" name = "Checking 2"><span class="checking-spans">Checking 2</span> $<?php echo $data['check2']['amount']?></option>
+    <option value="check3" name = "Checking 3"><span class="checking-spans">Checking 3</span> $<?php echo $data['check3']['amount']?></option>
   </select>
  
   <br>
-To: 
+  <h2>
+    To:
+  </h2>
+ 
   <select name="To" id="from">
-    <option value="check1" name = "Checking 1">Checking1 <?php echo $data['check1']['amount']?></option>
-    <option value="check2" name = "Checking 2">Checking2 <?php echo $data['check2']['amount']?></option>
-    <option value="check3" name = "Checking 3">Checking3 <?php echo $data['check3']['amount']?></option>
+    <option value="check1" name = "Checking 1"><span class="checking-spans">Checking 1</span> $<?php echo $data['check1']['amount']?></option>
+    <option value="check2" name = "Checking 2"><span class="checking-spans">Checking 2</span> $<?php echo $data['check2']['amount']?></option>
+    <option value="check3" name = "Checking 3"><span class="checking-spans">Checking 3</span> $<?php echo $data['check3']['amount']?></option>
 
   </select><br>
-Amount: 
+  <h2>Amount:</h2>
+ 
   <input type="number" name="amount" id = "amount" >
   <br><br>
-  <input type="submit">
+  <input type="submit" class="transaction-form-button">
 
 </form>
 <?php echo "<p>" . $message . "</p>";?>
