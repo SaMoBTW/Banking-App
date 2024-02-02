@@ -46,16 +46,7 @@ header {
     transform: translateY(-50%);
 }
 
-.header-heading {
-    font-family: "Roboto", sans-serif;
-    color: white;
-    font-size: 2em;
-    height: 2em;
-    padding-top: 35px;
-    min-width: 300px;
-    display: inline-block;
 
-}
 
 #profileImage {
     float: right;
@@ -63,6 +54,7 @@ header {
     width: 80px;
     height: 80px;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding: 5px;
     border: 5px solid black;
     border-radius: 30%;
@@ -273,6 +265,11 @@ body {
     width: 90px;
 }
 
+.trans-acc-balance {
+    margin-left: 15px;
+    width: 4rem;
+}
+
 .transaction-form-button {
     background-color: #0d6efd;
     padding: 5px;
@@ -290,3 +287,50 @@ body {
 select {
     padding: 5px;
 }
+
+.sufffunds {
+    color: green;
+}
+
+.insufffunds {
+    color: red;
+}
+
+.nav-bar-buttons {
+    display: inline;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.nav-bar-buttons>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.header-heading {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 2em;
+    /* height: 2em; */
+    min-width: 300px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 35px;
+
+}
+
+
+/*-----------------Task----------------------
+make 2 classes
+.insufffunds
+have the color be red
+and 
+.sufffunds
+have the color be green
+*/
+
+/* ^ DONE ^ */
