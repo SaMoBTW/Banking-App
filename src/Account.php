@@ -20,4 +20,6 @@ include_once(APP_ROOT . "/BoilerPlate/header.view.php");
 
 </div>
 
+<?php include_once('boilerplate/footer.view.php') ?>
+
 

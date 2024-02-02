@@ -45,6 +45,7 @@ include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
             </div>
     </div>
 </div>
+
+
 <!-- Login form  -->
-</body>
-</html>
+<?php include_once('src/boilerplate/footer.view.php')?>
