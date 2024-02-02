@@ -1,10 +1,10 @@
 
-    </div>
+    </div><!-- wrapper dive closes -->
     <footer>
-        <center>
-            <h6><a href="https://google.com"><i> GitHub Repository Code <i></a> <h6>
-        </center>
+        <div>
+            <a class="footer-repo" href="https://github.com/SaMoBTW/Banking-App">GitHub Repository Code</a> 
+        </div>    
     </footer>
-
+    
 </body>
 </html>

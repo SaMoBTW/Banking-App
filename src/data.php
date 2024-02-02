@@ -6,19 +6,19 @@ $data =
     [
         'number'=> '1234 5678 9101',
         'amount'=> 2000,
-        'name' => 'Checking 1'
+        'name' => "Checking 1"
     ],
     'check2' =>
     [
         'number'=> '9876 5432 1032',
         'amount'=> 0,
-        'name'=> 'Checking 2'
+        'name'=> "Checking 2"
     ],
     'check3'=> 
     [
         'number'=> '4675 4582 2158',
         'amount'=> 1000000,
-        'name'=> 'Checking 3'
+        'name'=> "Checking 3"
     ]
 ];
     function checkBalance($accountBalance1, $accountBalance2) {
@@ -32,15 +32,16 @@ $data =
         $total = 0;
         foreach ($data as $check) {
             echo "
-            <div>
-                <p class = 'checkingDiv'>{$check['name']}</p>
-                <p class = 'checkingDiv'>{$check['number']}</p>
-                <p class = 'checkingDiv'>{$check['amount']}</p>
+            <div class = 'acc-wrapper'>
+                <h3 class = 'checking-heading'>{$check['name']}</h3>
+                <p class = 'checking-acc-num'>{$check['number']}</p>
+      
+                <h2 class = 'checking-balance'>Available balance: $ {$check['amount']}</h2>
             </div>
             ";
             $total += $check['amount'];
         }
-        echo "<h3 class = 'total'> Total  = {$total} </h3>";
+        echo "<h2 class = 'total'> Total: $ {$total} </h2>";
     }
 
     function setUser()
@@ -54,4 +55,19 @@ $data =
     function getUser(){
         echo $_SESSION['$user'];
     }
+    
+
+    
+    function goToAccount()
+    {
+        header("Location: src/Account.php");
+        exit();
+    }
+    function goToTransfer(){
+        header("Location: src/Transfers.php");
+        exit();
+    }
+
+    
+
 ?>

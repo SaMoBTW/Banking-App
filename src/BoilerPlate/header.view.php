@@ -2,17 +2,21 @@
 session_start();
 // Path Configuring   //////////////////////////////////////
 $user = $_SESSION['$user'];
+
 ?>
+<html>
 <body>
-    <div id="wrapper">
-    <header id="banner-container">
-        <div id="overlay-div">
-            <img id="profileImage" src="./media/bankIcon.jpg">
-            <h1 class ="header-heading">&nbsp;&nbsp;&nbsp;&nbsp; <?php echo "Welcome " . $user ?></h1>
-        </div>
+    <div id="wrapper"> <!-- wrapper dive opens -->
+        <header id="banner-container">
+            <div id="overlay-div">
+                <img id="profileImage" src="./media/bankIcon.jpg">
+                <h1 class ="header-heading">&nbsp;&nbsp;&nbsp;&nbsp; <?php echo "Welcome " . $user ?></h1>
 
-        <!--<img id="banner" src="src/media/banner.jpg" alt="Banner Image">-->
-
-    </header>
-
-    <br>
+                <nav class="nav-bar">
+                    <ul>
+                        <li class='nav-bar-buttons'><a href='/src/transaction.php'>Transfers</a></li>
+                        <li class="nav-bar-buttons"><a href="/src/account.php">Accounts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
