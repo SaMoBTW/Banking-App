@@ -6,19 +6,19 @@ $data =
     [
         'number'=> '1234 5678 9101',
         'amount'=> 2000,
-        'name' => 'Checking 1'
+        'name' => "Checking 1"
     ],
     'check2' =>
     [
         'number'=> '9876 5432 1032',
         'amount'=> 0,
-        'name'=> 'Checking 2'
+        'name'=> "Checking 2"
     ],
     'check3'=> 
     [
         'number'=> '4675 4582 2158',
         'amount'=> 1000000,
-        'name'=> 'Checking 3'
+        'name'=> "Checking 3"
     ]
 ];
     function checkBalance($accountBalance1, $accountBalance2) {
