@@ -1,4 +1,3 @@
-
 <?php 
 session_start();
 // Path Configuring   //////////////////////////////////////
@@ -9,6 +8,7 @@ $APP_ROOT = $config[$environment]['APP_ROOT'];
 define('APP_ROOT', dirname(__FILE__));
 define('URL_BASE', $config[$environment]["URL_BASE"]);
 ////////////////////////////////////////////////////////////
+include_once(APP_ROOT. "/src/data.php");
 include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
 
 ?>
@@ -20,10 +20,10 @@ include_once(APP_ROOT . "/src/BoilerPlate/head.view.php");
             <div class="form-header">
                 <h1>Account Login</h1>
             </div>
-            
+
             <div class="form-content">
-            
-                <form method="post" action = <?php echo URL_BASE . "/src/Account.php"?>>
+
+                <form method="post">
 
                     <div class="form-group">
                         <label for="username">Username</label>
