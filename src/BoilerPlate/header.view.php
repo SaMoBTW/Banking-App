@@ -14,8 +14,8 @@ $user = $_SESSION['$user'];
 
                 <nav class="nav-bar">
                     <ul>
-                        <li class='nav-bar-buttons'><a href='/src/transaction.php'>Transfers</a></li>
-                        <li class="nav-bar-buttons"><a href="/src/account.php">Accounts</a></li>
+                        <li class='nav-bar-buttons'><a href=<?php echo URL_BASE . '/Banking-App/src/transaction.php'?>>Transfers</a></li>
+                        <li class="nav-bar-buttons"><a href=<?php echo URL_BASE . "/Banking-App/src/Account.php"?>>Accounts</a></li>
                     </ul>
                 </nav>
             </div>
